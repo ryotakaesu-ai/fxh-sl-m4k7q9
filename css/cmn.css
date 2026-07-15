@@ -1,0 +1,205 @@
+
+/*___________________ 画像 _____________________*/
+.gazo0{
+	margin: 0px auto 0px;
+	display: block;
+}
+.gazo10{
+	margin: 0px auto 10px;
+	display: block;
+}
+.gazo20{
+	margin: 0px auto 20px;
+	display: block;
+}
+.gazo30{
+	margin: 0px auto 30px;
+	display: block;
+}
+.gazo40{
+	margin: 0px auto 40px;
+	display: block;
+}
+.gazo50{
+	margin: 0px auto 50px;
+	display: block;
+}
+.gazo60{
+	margin: 0px auto 60px;
+	display: block;
+}
+.gazo80{
+	margin: 0px auto 80px;
+	display: block;
+}
+.migi{
+	float: right;
+	margin-left: 23px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+/*___________________ コンテンツ _____________________*/
+
+
+.box{
+	width: 780px;
+	margin: 0px auto 20px;
+	overflow: hidden;
+	display: block;
+}
+.box p{
+	width: 780px;
+	margin: 0px auto 40px;
+	overflow: hidden;
+	display: block;
+}
+.box p a{
+	color: #127DE6;
+}
+.box2{
+	width: 780px;
+	margin: 0px auto 0px;
+	overflow: hidden;
+	display: block;
+}
+.box2 p{
+	width: 780px;
+	margin: 0px auto 40px;
+	overflow: hidden;
+	display: block;
+}
+#roman_bg0{
+    background-image: url("../images/roman_bg0.jpg");
+    background-repeat: repeat-y;
+	background-position: center 0;
+    background-size: 1600px;
+    width: 100%;
+	margin: 0px auto 60px;
+	overflow: hidden;
+	display: block;
+}
+.roman{
+	width: 840px;
+    text-shadow: 0 0 5px #FFF, 0 0 5px #FFF, 0 0 5px #FFF, 0 0 10px #FFF, 0 0 10px #FFF;
+	margin: 0px auto 0px;
+	overflow: hidden;
+	display: block;
+}
+.roman p{
+	width: 760px;
+	margin: 0px auto 30px;
+    overflow: hidden;
+	display: block;
+}
+
+#ok_bg0{
+    background-image: url("../images/ok_bg0.jpg");
+    background-repeat: repeat-y;
+	background-position: center 0;
+    background-size: 1600px;
+    width: 100%;
+	margin: 0px auto 60px;
+	overflow: hidden;
+	display: block;
+}
+.ok{
+	width: 840px;
+    text-shadow: 0 0 5px #FFF, 0 0 5px #FFF, 0 0 5px #FFF, 0 0 10px #FFF, 0 0 10px #FFF;
+	margin: 0px auto 30px;
+	overflow: hidden;
+	display: block;
+}
+.ok p{
+	width: 760px;
+	margin: 0px auto 30px;
+    overflow: hidden;
+	display: block;
+}
+#support_bg{
+    background-image: url("../images/support_bg.png");
+    background-repeat: repeat-y;
+	background-position: center 0;
+    background-size: 1600px;
+    width: 100%;
+    padding: 40px 0px 40px;
+	margin: 0px auto 70px;
+	overflow: hidden;
+	display: block;
+}
+.support{
+    background-color: #FFF;
+	width: 840px;
+    border: solid 3px #0B47C4;
+    border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding-top: 30px;
+	margin: 0px auto 30px;
+	overflow: hidden;
+	display: block;
+}
+.support p{
+	width: 730px;
+	margin: 0px auto 40px;
+    overflow: hidden;
+	display: block;
+}
+
+
+#con_bg0{
+    background-image: url("../images/con_bg0.jpg");
+    background-repeat: repeat-y;
+	background-position: center 0;
+    background-size: 1600px;
+    width: 100%;
+	margin: 0px auto 0px;
+	overflow: hidden;
+	display: block;
+}
+.con{
+    background-color: #FFF;
+	width: 840px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	margin: 0px auto 30px;
+	overflow: hidden;
+	display: block;
+}
+.con p{
+	width: 760px;
+	margin: 0px auto 40px;
+    overflow: hidden;
+	display: block;
+}
+
+#qa_bg{
+    background-image: url("../images/qa_bg.png");
+    background-repeat: repeat-y;
+	background-position: center 0;
+    background-size: 1600px;
+    width: 100%;
+    padding: 50px 0px 20px;
+	margin: 0px auto 60px;
+	overflow: hidden;
+	display: block;
+}
+
+.countdown {
+    background-color: #0A2C6E;
+    background-position: center 0;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "A-OTF 新ゴ Pro", A-OTF Shin Go Pro, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    width: 100%;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 47px;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 0 5px #9B834E;
+    padding: 15px 0;
+    margin: 0px auto 0px;
+    overflow: hidden;
+    display: block;
+}

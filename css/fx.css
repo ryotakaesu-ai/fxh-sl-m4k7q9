@@ -1,0 +1,451 @@
+/* ============================================================
+   FX HIDE ID 追加スタイル（元SLの画像見出しをHTMLで再現）
+   元デザイン：白地×黒ゴシック×赤明朝アクセント → 青明朝アクセント
+   ============================================================ */
+
+.mincho{
+  font-family:"Hiragino Mincho ProN","ヒラギノ明朝 Pro W6","Yu Mincho","MS PMincho",serif;
+}
+
+/* ---------- FV（画像版） ---------- */
+.fv-wrap{
+  width:100%;
+  background:#0A1730;
+  text-align:center;
+  line-height:0;
+  margin:0 auto;
+  display:block;
+}
+.fv-pc{width:100%;max-width:1637px;display:inline-block;}
+.fv-sp{display:none;}
+@media screen and (max-width: 640px){
+  .fv-pc{display:none;}
+  .fv-sp{display:inline-block;width:100%;}
+}
+
+/* ---------- FV ---------- */
+#top_fx{
+  background-image:url("../images/top_bg_blue.jpg");
+  background-repeat:no-repeat;
+  background-position:center 0;
+  background-size:1600px;
+  width:100%;
+  text-align:center;
+  padding:52px 0 46px;
+  margin:0 auto 0;
+  overflow:hidden;
+  display:block;
+}
+.fv-badge{
+  background-color:#111;
+  color:#FFF;
+  font-weight:bold;
+  font-size:33px;
+  letter-spacing:.04em;
+  padding:10px 44px;
+  margin:0 auto 14px;
+  display:inline-block;
+  position:relative;
+}
+.fv-badge:after{
+  content:"";
+  position:absolute;left:50%;bottom:-15px;margin-left:-15px;
+  border:15px solid transparent;border-top-color:#111;border-bottom:0;
+}
+.fv-badge .kin{color:#F1C40F;font-size:44px;}
+.fv-quote{
+  font-size:42px;
+  font-weight:bold;
+  color:#0B47C4;
+  line-height:1.6;
+  margin:22px auto 2px;
+  display:block;
+}
+.fv-sub{
+  font-size:30px;
+  font-weight:bold;
+  color:#111;
+  line-height:1.6;
+  display:block;
+}
+.fv-gold{
+  font-weight:bold;
+  font-size:83px;
+  line-height:1.25;
+  letter-spacing:.01em;
+  background:linear-gradient(180deg,#E8D9A0 0%,#C9A34E 28%,#8F6B1F 52%,#E4CE8C 74%,#7E5D1A 100%);
+  -webkit-background-clip:text;background-clip:text;
+  color:transparent;
+  filter:drop-shadow(1px 2px 1px rgba(255,255,255,.9)) drop-shadow(0 3px 3px rgba(80,60,10,.35));
+  margin:6px auto 6px;
+  display:block;
+}
+.fv-magic{
+  font-size:31px;font-weight:bold;color:#111;line-height:1.6;display:block;
+}
+.fv-open{
+  font-size:47px;font-weight:bold;color:#111;line-height:1.5;
+  margin:4px auto 26px;display:block;
+}
+.fv-open .ao{color:#0B47C4;}
+.fv-box{
+  background:#FFF;
+  width:640px;
+  border:1px solid #D8D8D8;
+  box-shadow:0 0 14px rgba(0,0,0,.13);
+  padding:24px 30px 26px;
+  margin:0 auto 30px;
+  display:block;
+}
+.fv-box .l1{font-size:27px;font-weight:bold;color:#111;line-height:1.6;display:block;}
+.fv-box .l2{
+  font-size:40px;font-weight:bold;color:#0B47C4;line-height:1.6;
+  border-bottom:6px solid #E3C15C;
+  padding:0 6px 0px;
+  display:inline-block;
+}
+.fv-jitsuha{font-size:33px;font-weight:bold;color:#111;display:block;margin:0 auto;}
+
+/* ---------- 秘匿プロジェクト帯（青シルク） ---------- */
+#himitsu_bg{
+  background-image:url("../images/con_bg.jpg");
+  background-repeat:no-repeat;
+  background-position:center 0;
+  background-size:cover;
+  width:100%;
+  text-align:center;
+  padding:56px 0 50px;
+  margin:0 auto 60px;
+  overflow:hidden;
+  display:block;
+}
+.himitsu-tag{
+  background:linear-gradient(180deg,#FDF6E3,#F0E3BC);
+  color:#111;
+  font-weight:bold;
+  font-size:31px;
+  padding:8px 46px;
+  margin:0 auto 26px;
+  display:inline-block;
+}
+.himitsu-main{
+  color:#FFF;
+  font-weight:bold;
+  font-size:44px;
+  line-height:1.65;
+  text-shadow:0 2px 8px rgba(0,0,0,.45);
+  margin:0 auto 30px;
+  display:block;
+}
+.himitsu-main .kin{color:#EFD98B;}
+.video-cta{
+  background:#FFF;
+  color:#111;
+  font-weight:bold;
+  font-size:31px;
+  padding:8px 40px;
+  margin:0 auto 30px;
+  display:inline-block;
+  position:relative;
+}
+.video-cta .sankaku{color:#0B47C4;}
+.video-cta:after{
+  content:"";
+  position:absolute;left:50%;bottom:-14px;margin-left:-14px;
+  border:14px solid transparent;border-top-color:#FFF;border-bottom:0;
+}
+
+/* ---------- HTML見出し（元は画像見出し） ---------- */
+.h2ttl{
+  width:840px;
+  background:#FFF;
+  font-weight:bold;
+  font-size:44px;
+  line-height:1.55;
+  text-align:center;
+  color:#111;
+  padding:26px 10px;
+  margin:0 auto 40px;
+  display:block;
+}
+.h2ttl .ao{color:#0B47C4;}
+.h2ttl .ao-min{color:#0B47C4;font-size:1.15em;}
+.h2ttl small{font-size:.62em;font-weight:bold;display:block;}
+.h2ttl-plain{
+  width:860px;
+  font-weight:bold;
+  font-size:44px;
+  line-height:1.55;
+  text-align:center;
+  color:#111;
+  margin:0 auto 40px;
+  display:block;
+}
+.h2ttl-plain .ao{color:#0B47C4;}
+
+/* CONTENTS見出し（元con01〜04.jpgの上部を再現） */
+.con-head{
+  width:100%;
+  background:linear-gradient(180deg,#FBF6EC, #F5EDDD);
+  padding:26px 0 22px;
+  margin:0 0 0;
+  overflow:hidden;
+  display:block;
+  text-align:left;
+}
+.con-num{
+  float:left;
+  background:#0B47C4;
+  width:104px;height:104px;
+  color:#FFF;
+  text-align:center;
+  margin:0 26px 0 34px;
+  box-shadow:2px 3px 6px rgba(0,0,0,.25);
+}
+.con-num .cap{font-size:13px;letter-spacing:.06em;display:block;padding-top:14px;}
+.con-num .n{font-family:"Hiragino Mincho ProN",serif;font-size:56px;font-weight:bold;line-height:1.1;display:block;}
+.con-copy{
+  float:left;
+  padding-top:10px;
+}
+.con-copy .s{font-size:27px;font-weight:bold;color:#111;line-height:1.4;display:block;}
+.con-copy .l{font-size:37px;font-weight:bold;color:#0B47C4;line-height:1.5;display:block;}
+
+/* コース見出し帯（元info01.png再現） */
+.course-band{
+  width:840px;
+  background:linear-gradient(180deg,#1355D8,#0A2C6E);
+  border-radius:8px;
+  color:#FFF;
+  font-weight:bold;
+  font-size:36px;
+  text-align:center;
+  padding:20px 0;
+  margin:0 auto 40px;
+  display:block;
+}
+.course-band .maru{
+  background:radial-gradient(circle at 35% 30%,#FDF3C9,#D9B44A);
+  color:#7A5A12;
+  border-radius:50%;
+  font-size:22px;
+  font-weight:bold;
+  width:64px;height:64px;
+  display:inline-block;
+  vertical-align:middle;
+  margin-right:20px;
+  line-height:1.15;
+  padding-top:0px;
+}
+.course-band .maru .n2{font-family:"Hiragino Mincho ProN",serif;font-size:30px;display:block;margin-top:4px;}
+
+/* ---------- 成績表（スプレッドシート風） ---------- */
+.seiseki{
+  width:720px;
+  table-layout:fixed;
+  background:#FFF;
+  border:1px solid #C9C9C9;
+  box-shadow:0 0 10px rgba(0,0,0,.15);
+  margin:0 auto 40px;
+  display:table;
+  border-collapse:collapse;
+}
+.seiseki th{
+  background:#EDF2FB;
+  border:1px solid #C9C9C9;
+  font-size:19px;
+  font-weight:bold;
+  color:#111;
+  text-align:center;
+  padding:9px 4px;
+}
+.seiseki td{
+  border:1px solid #C9C9C9;
+  font-size:19px;
+  text-align:center;
+  padding:9px 4px;
+}
+.seiseki td.plus{color:#0B47C4;font-weight:bold;}
+.seiseki .goukei{
+  background:#0A2C6E;
+  color:#FFF;
+  font-size:22px;
+  font-weight:bold;
+}
+.seiseki .goukei .kin{color:#F1C40F;font-size:26px;}
+
+/* ---------- チャート枠（金縁・差し替え用） ---------- */
+.chart-ph{
+  width:840px;
+  background:#0D1526;
+  border:14px solid;
+  border-image:linear-gradient(135deg,#E8D9A0,#B8923B,#F2E4B2,#8F6B1F) 1;
+  color:#8FA5C4;
+  font-size:24px;
+  font-weight:bold;
+  text-align:center;
+  line-height:1.8;
+  padding:120px 20px;
+  margin:0 auto 40px;
+  display:block;
+}
+
+/* ---------- Discord 3ステップ ---------- */
+.step3{
+  width:840px;
+  margin:0 auto 40px;
+  overflow:hidden;
+  display:block;
+}
+.step3 .st{
+  float:left;
+  background:#FFF;
+  width:260px;
+  border-top:8px solid #0B47C4;
+  box-shadow:0 0 10px rgba(0,0,0,.15);
+  text-align:center;
+  padding:20px 0 18px;
+  margin-right:30px;
+}
+.step3 .st:last-child{margin-right:0;}
+.step3 .no{
+  background:#0B47C4;
+  color:#FFF;
+  font-weight:bold;
+  font-size:30px;
+  border-radius:50%;
+  width:56px;height:56px;line-height:56px;
+  margin:0 auto 10px;
+  display:block;
+}
+.step3 .tt{font-size:25px;font-weight:bold;display:block;line-height:1.5;}
+.step3 .dd{font-size:17px;line-height:1.7;color:#444;display:block;padding:8px 18px 0;}
+
+/* ---------- 特別サポートのリボン見出し（元toku画像の上部をHTML再現） ---------- */
+.toku-ribbon{
+  background:linear-gradient(180deg,#1355D8,#0A2C6E);
+  color:#FFF;
+  font-weight:bold;
+  font-size:30px;
+  letter-spacing:.04em;
+  text-align:center;
+  padding:10px 60px;
+  margin:10px auto 22px;
+  display:table;
+  position:relative;
+  box-shadow:0 3px 6px rgba(0,0,0,.25);
+}
+.toku-ribbon:before,
+.toku-ribbon:after{
+  content:"";
+  position:absolute;top:0;bottom:0;width:0;
+  border-top:29px solid transparent;
+  border-bottom:29px solid transparent;
+}
+.toku-ribbon:before{left:-26px;border-right:26px solid #0E3A96;}
+.toku-ribbon:after{right:-26px;border-left:26px solid #0E3A96;}
+.toku-ribbon .kin2{color:#EFD98B;font-family:"Hiragino Mincho ProN",serif;font-size:36px;}
+.toku-title{
+  font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
+  font-size:40px;
+  font-weight:bold;
+  color:#111;
+  text-align:center;
+  line-height:1.5;
+  margin:0 auto 26px;
+  display:block;
+}
+
+/* ---------- 価格・特典表 ---------- */
+.tokuten-list{
+  width:780px;
+  background:#FFF;
+  border:3px solid #0B47C4;
+  border-radius:4px;
+  box-shadow:0 0 10px rgba(0,0,0,.12);
+  margin:0 auto 40px;
+  display:block;
+  padding:30px 40px 12px;
+}
+.tokuten-list li{
+  list-style:none;
+  font-size:23px;
+  font-weight:bold;
+  line-height:1.6;
+  padding:0 0 18px 46px;
+  position:relative;
+}
+.tokuten-list li:before{
+  content:"✔";
+  position:absolute;left:4px;top:0;
+  color:#0B47C4;
+  font-size:28px;
+}
+.tokuten-list li small{font-size:.75em;font-weight:normal;color:#555;}
+
+.kome-box{
+  width:720px;
+  background:#F4F6FA;
+  border:1px solid #D5DCE8;
+  font-size:17px;
+  line-height:1.9;
+  color:#333;
+  padding:20px 30px;
+  margin:0 auto 40px;
+  display:block;
+}
+
+/* ---------- 追伸引用 ---------- */
+.quote-ao{
+  color:#0B47C4;
+  font-weight:bold;
+  text-align:center;
+  font-size:27px;
+  line-height:1.9;
+  margin:0 auto 40px;
+  display:block;
+}
+
+/* ---------- フッター ---------- */
+.disclaimer{
+  width:780px;
+  font-size:14px;
+  line-height:1.9;
+  color:#666;
+  margin:0 auto 30px;
+  display:block;
+}
+
+/* ---------- SP（640px以下、元style2の流儀に合わせ2.3倍系サイズ） ---------- */
+@media screen and (max-width: 640px){
+  #top_fx{background-size:1600px;padding:40px 0 36px;}
+  .fv-badge{font-size:38px;padding:8px 30px;}
+  .fv-badge .kin{font-size:50px;}
+  .fv-quote{font-size:44px;}
+  .fv-sub{font-size:33px;}
+  .fv-gold{font-size:78px;}
+  .fv-magic{font-size:33px;}
+  .fv-open{font-size:48px;}
+  .fv-box{width:760px;}
+  .fv-box .l1{font-size:34px;}
+  .fv-box .l2{font-size:46px;}
+  .fv-jitsuha{font-size:38px;}
+  .himitsu-main{font-size:46px;}
+  .h2ttl{width:860px;font-size:46px;}
+  .h2ttl-plain{width:860px;font-size:46px;}
+  .seiseki{width:840px;}
+  .seiseki th,.seiseki td{font-size:26px;}
+  .seiseki .goukei{font-size:30px;}
+  .chart-ph{width:820px;font-size:30px;}
+  .step3 .st{float:none;width:700px;margin:0 auto 26px;}
+  .step3 .tt{font-size:34px;}
+  .step3 .dd{font-size:26px;}
+  .tokuten-list{width:760px;}
+  .tokuten-list li{font-size:30px;}
+  .kome-box{width:760px;font-size:24px;}
+  .con-copy .s{font-size:30px;}
+  .con-copy .l{font-size:40px;}
+  .course-band{font-size:38px;}
+  .quote-ao{font-size:34px;}
+  .disclaimer{width:820px;font-size:20px;}
+}
