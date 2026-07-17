@@ -577,3 +577,86 @@
   .fv3-logo{font-size:46px;margin:38px 0 16px;}
   .fv3-cta{font-size:21px;}
 }
+
+/* ============================================================
+   FV v4（コピー焼き込み画像＋サブコピーのみHTML重畳）
+   ベース画像：images/FV4_PC.jpg（1536x1024、サブコピー帯は空）
+   ============================================================ */
+.fv4{
+  position:relative;
+  max-width:1637px;
+  margin:0 auto;
+}
+.fv4-sub{
+  position:absolute;
+  left:31%;
+  width:57%;
+  top:60.9%;
+  height:12.8%;
+  border-top:1px solid rgba(201,169,97,.5);
+  border-bottom:1px solid rgba(201,169,97,.5);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.fv4-sub p{
+  margin:0;
+  width:100%;
+  font-family:"Hiragino Mincho ProN","ヒラギノ明朝 Pro W6","Yu Mincho","MS PMincho",serif;
+  font-weight:bold;
+  color:#EDE3CB;
+  font-size:min(1.6vw, 25px);
+  line-height:1.85;
+  letter-spacing:.04em;
+  text-shadow:0 1px 10px rgba(0,0,0,.9);
+}
+.fv4-sub .big{
+  color:#E8CD86;
+  font-size:min(2vw, 32px);
+  background:linear-gradient(180deg,#F5E5B8 8%,#D9B96E 55%,#B08F45 95%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.fv4-sub .em{
+  color:#FFFFFF;
+  font-size:min(1.65vw, 26px);
+}
+@media screen and (max-width: 640px){
+  /* SP版は旧FV_SP.jpg（コピー焼き込み済み）をそのまま表示。重畳は不要 */
+  .fv4-sub{display:none;}
+}
+
+/* ---------- FV v4 SP：サブコピーは画像直下のデザイン帯 ---------- */
+.fv4-sub-sp{display:none;}
+@media screen and (max-width: 640px){
+  .fv4-sub-sp{
+    display:block;
+    background:linear-gradient(180deg,#0A1425 0%,#060C1A 100%);
+    border-top:1px solid rgba(201,169,97,.45);
+    border-bottom:1px solid rgba(201,169,97,.45);
+    padding:34px 20px 36px;
+    text-align:center;
+    line-height:1.9;
+  }
+  .fv4-sub-sp p{
+    margin:0;
+    font-family:"Hiragino Mincho ProN","ヒラギノ明朝 Pro W6","Yu Mincho","MS PMincho",serif;
+    font-weight:bold;
+    color:#EDE3CB;
+    font-size:25px;
+    letter-spacing:.04em;
+  }
+  .fv4-sub-sp .big{
+    font-size:33px;
+    background:linear-gradient(180deg,#F5E5B8 8%,#D9B96E 55%,#B08F45 95%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+  .fv4-sub-sp .em{
+    color:#FFFFFF;
+    font-size:27px;
+  }
+}
