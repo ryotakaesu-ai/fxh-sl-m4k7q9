@@ -449,3 +449,131 @@
   .quote-ao{font-size:34px;}
   .disclaimer{width:820px;font-size:20px;}
 }
+
+/* ============================================================
+   FV v3（2026-07-17 背景写真×HTMLコピー重畳型）
+   絵：images/FV3_PC.jpg / FV3_SP.jpg（image-gen生成・文字なし）
+   ============================================================ */
+.fv3{
+  position:relative;
+  width:100%;
+  background:#060C1A url("../images/FV3_PC.jpg") center top no-repeat;
+  background-size:cover;
+  overflow:hidden;
+  line-height:1;
+}
+.fv3:before{
+  content:"";
+  position:absolute;top:0;left:0;right:0;bottom:0;
+  background:linear-gradient(100deg, rgba(6,12,26,0) 30%, rgba(6,12,26,.5) 58%, rgba(6,12,26,.68) 100%);
+}
+.fv3-inner{
+  position:relative;
+  max-width:1637px;
+  margin:0 auto;
+  padding:88px 5% 72px 34%;
+  text-align:center;
+}
+.fv3 .gold{color:#E8CD86;}
+.fv3-badge{
+  display:inline-block;
+  border:1px solid rgba(201,169,97,.65);
+  background:rgba(6,12,26,.55);
+  color:#F0E6CE;
+  font-size:27px;
+  font-weight:bold;
+  letter-spacing:.16em;
+  padding:14px 46px;
+  margin:0 auto;
+}
+.fv3-badge .gold{font-size:33px;}
+.fv3-lead{
+  color:#D9E1EF;
+  font-size:29px;
+  letter-spacing:.14em;
+  margin:44px 0 22px;
+}
+.fv3-lead .fv3-hide{
+  color:#E8CD86;
+  font-size:36px;
+  letter-spacing:.08em;
+}
+.fv3-main{
+  color:#FFFFFF;
+  font-size:42px;
+  font-weight:bold;
+  line-height:1.6;
+  letter-spacing:.04em;
+  text-shadow:0 2px 24px rgba(3,7,16,.85);
+  margin:0 0 34px;
+}
+.fv3-main em{
+  font-style:normal;
+  background:linear-gradient(180deg,#F5E5B8 8%,#D9B96E 55%,#B08F45 95%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-size:49px;
+}
+.fv3-br-sp{display:none;}
+.fv3-sub{
+  color:#C7D3E6;
+  font-size:25px;
+  line-height:1.95;
+  letter-spacing:.05em;
+  margin:0 auto;
+  padding:26px 0;
+  border-top:1px solid rgba(201,169,97,.4);
+  border-bottom:1px solid rgba(201,169,97,.4);
+  max-width:760px;
+}
+.fv3-sub .gold-strong{
+  color:#E8CD86;
+  font-size:32px;
+  font-weight:bold;
+}
+.fv3-sub-em{
+  color:#FFFFFF;
+  font-weight:bold;
+  font-size:27px;
+}
+.fv3-logo{
+  font-size:54px;
+  font-weight:bold;
+  letter-spacing:.22em;
+  margin:44px 0 20px;
+  background:linear-gradient(180deg,#F5E5B8 8%,#D9B96E 55%,#B08F45 95%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.fv3-cta{
+  color:#9DB1D2;
+  font-size:23px;
+  letter-spacing:.12em;
+}
+@media screen and (max-width: 640px){
+  .fv3{
+    background:#060C1A url("../images/FV3_SP.jpg") center bottom no-repeat;
+    background-size:cover;
+    min-height:1120px;
+  }
+  .fv3:before{
+    background:linear-gradient(180deg, rgba(6,12,26,.62) 0%, rgba(6,12,26,.42) 46%, rgba(6,12,26,0) 72%);
+  }
+  .fv3-inner{
+    padding:64px 24px 0;
+  }
+  .fv3-badge{font-size:24px;padding:12px 30px;letter-spacing:.1em;}
+  .fv3-badge .gold{font-size:30px;}
+  .fv3-lead{font-size:26px;margin:38px 0 18px;}
+  .fv3-lead .fv3-hide{font-size:32px;}
+  .fv3-main{font-size:46px;line-height:1.6;}
+  .fv3-main em{font-size:53px;}
+  .fv3-br-sp{display:inline;}
+  .fv3-sub{font-size:23px;max-width:560px;}
+  .fv3-sub .gold-strong{font-size:29px;}
+  .fv3-sub-em{font-size:25px;}
+  .fv3-logo{font-size:46px;margin:38px 0 16px;}
+  .fv3-cta{font-size:21px;}
+}
