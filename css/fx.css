@@ -660,3 +660,11 @@
     font-size:27px;
   }
 }
+
+/* ---------- 商品パッケージ画像（2026-07-19差し替え） ---------- */
+.pkg{
+  max-width:94%;
+  height:auto;
+  border-radius:14px;
+  box-shadow:0 14px 44px rgba(10,20,45,.28);
+}
