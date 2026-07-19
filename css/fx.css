@@ -431,8 +431,34 @@
   .fv-box .l2{font-size:46px;}
   .fv-jitsuha{font-size:38px;}
   .himitsu-main{font-size:46px;}
-  .h2ttl{width:860px;font-size:46px;}
-  .h2ttl-plain{width:860px;font-size:46px;}
+  /* SP：見出しをネイビー×金の帯にして視認性を上げる（2026-07-20） */
+  .h2ttl{
+    width:100%;
+    box-sizing:border-box;
+    font-size:52px;
+    line-height:1.5;
+    background:linear-gradient(135deg,#0A1730 0%,#16294E 55%,#0A1730 100%);
+    color:#FFF;
+    border-top:4px solid #C9A961;
+    border-bottom:4px solid #C9A961;
+    padding:42px 24px;
+    margin:0 0 46px;
+  }
+  .h2ttl .ao,.h2ttl .ao-min{color:#EDD695;}
+  .h2ttl small{color:#C7D3E6;}
+  .h2ttl-plain{
+    width:100%;
+    box-sizing:border-box;
+    font-size:52px;
+    line-height:1.5;
+    background:linear-gradient(135deg,#0A1730 0%,#16294E 55%,#0A1730 100%);
+    color:#FFF;
+    border-top:4px solid #C9A961;
+    border-bottom:4px solid #C9A961;
+    padding:42px 24px;
+    margin:0 0 46px;
+  }
+  .h2ttl-plain .ao{color:#EDD695;}
   .seiseki{width:840px;}
   .seiseki th,.seiseki td{font-size:30px;}
   .seiseki .goukei{font-size:34px;}

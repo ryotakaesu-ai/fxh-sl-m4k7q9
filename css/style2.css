@@ -1,8 +1,8 @@
 body{
 	width: 900px;
 	font-family: notosans,"メイリオ", Meiryo, "A-OTF 新ゴ Pro",A-OTF Shin Go Pro,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	font-size:44px; 
-line-height:70px;
+	font-size:40px; 
+line-height:64px;
 	color: #111;
 }
 
@@ -141,7 +141,7 @@ input[name="image"]:hover { opacity:0.9; filter:alpha(opacity=70); }
     background-size: 121px;
 	width: 630px;
 	font-weight: bold;
-    line-height:64px;
+    line-height:58px;
 	padding: 5px 20px 15px 110px;
 	margin: 0px auto 10px;
 	display: block;
@@ -152,7 +152,7 @@ input[name="image"]:hover { opacity:0.9; filter:alpha(opacity=70); }
 	background-position: 0px -10px;
     background-size: 121px;
 	width: 630px;
-    line-height:68px;
+    line-height:62px;
     border-bottom: solid 1px #cacaca;
 	padding: 3px 20px 20px 110px;
 	margin: 0px auto 30px;
