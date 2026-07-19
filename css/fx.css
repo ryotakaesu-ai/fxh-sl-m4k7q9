@@ -668,3 +668,68 @@
   border-radius:14px;
   box-shadow:0 14px 44px rgba(10,20,45,.28);
 }
+
+/* ============================================================
+   動画セクション（FVのシャンパン大理石から地続き 2026-07-19）
+   ============================================================ */
+.video-sec{
+  background:linear-gradient(180deg,#DBD2C5 0%,#E9E1D2 14%,#F3EDE0 42%,#F7F2E7 100%);
+  padding:34px 0 46px;
+  text-align:center;
+}
+.video-frame{
+  width:860px;
+  max-width:92%;
+  margin:0 auto;
+  padding:10px;
+  background:linear-gradient(180deg,#F5E5B8 0%,#D9B96E 45%,#B08F45 100%);
+  border-radius:14px;
+  box-shadow:0 16px 44px rgba(90,74,40,.28);
+}
+.video-screen{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  background:radial-gradient(120% 90% at 50% 30%,#15294F 0%,#0A1526 70%);
+  border-radius:8px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:26px;
+}
+.video-play{
+  width:96px;height:96px;border-radius:50%;
+  border:3px solid rgba(233,205,134,.9);
+  background:rgba(10,21,38,.35);
+  position:relative;
+  box-shadow:0 0 34px rgba(217,185,110,.35);
+}
+.video-play:after{
+  content:"";
+  position:absolute;left:50%;top:50%;
+  transform:translate(-38%,-50%);
+  border-style:solid;
+  border-width:19px 0 19px 32px;
+  border-color:transparent transparent transparent #EDD695;
+}
+.video-cap{
+  color:#E9DFC8;
+  font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
+  font-size:27px;
+  font-weight:bold;
+  letter-spacing:.08em;
+}
+.video-note{
+  margin-top:16px;
+  color:#8D8065;
+  font-size:17px;
+  letter-spacing:.04em;
+}
+@media screen and (max-width: 640px){
+  .video-frame{width:94%;padding:7px;}
+  .video-play{width:76px;height:76px;}
+  .video-play:after{border-width:15px 0 15px 25px;}
+  .video-cap{font-size:22px;}
+  .video-note{font-size:15px;}
+}
