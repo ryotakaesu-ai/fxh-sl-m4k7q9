@@ -434,20 +434,20 @@
   .h2ttl{width:860px;font-size:46px;}
   .h2ttl-plain{width:860px;font-size:46px;}
   .seiseki{width:840px;}
-  .seiseki th,.seiseki td{font-size:26px;}
-  .seiseki .goukei{font-size:30px;}
+  .seiseki th,.seiseki td{font-size:30px;}
+  .seiseki .goukei{font-size:34px;}
   .chart-ph{width:820px;font-size:30px;}
   .step3 .st{float:none;width:700px;margin:0 auto 26px;}
   .step3 .tt{font-size:34px;}
-  .step3 .dd{font-size:26px;}
+  .step3 .dd{font-size:30px;}
   .tokuten-list{width:760px;}
   .tokuten-list li{font-size:30px;}
-  .kome-box{width:760px;font-size:24px;}
+  .kome-box{width:760px;font-size:28px;line-height:1.7;}
   .con-copy .s{font-size:30px;}
   .con-copy .l{font-size:40px;}
   .course-band{font-size:38px;}
   .quote-ao{font-size:34px;}
-  .disclaimer{width:820px;font-size:20px;}
+  .disclaimer{width:820px;font-size:26px;line-height:1.7;}
 }
 
 /* ============================================================
@@ -732,4 +732,13 @@
   .video-play:after{border-width:15px 0 15px 25px;}
   .video-cap{font-size:22px;}
   .video-note{font-size:15px;}
+}
+
+/* ---------- SP：本文フォント拡大に伴う回り込み解除（2026-07-20） ---------- */
+@media screen and (max-width: 640px){
+  .box2 p img.migi{
+    float:none;
+    display:block;
+    margin:0 auto 30px;
+  }
 }
