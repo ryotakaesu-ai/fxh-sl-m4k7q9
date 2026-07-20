@@ -111,9 +111,9 @@ input[name="image"]:hover { opacity:0.9; filter:alpha(opacity=70); }
 /*___________________ タイマー _____________________*/
 .time {
     font-family:'Hiragino Mincho Pro', 'ヒラギノ明朝 Pro W3','Kozuka Mincho Pro', 'Kozuka Mincho Std', '小塚明朝 Pro R', '小塚明朝 Std R', 'ＭＳ Ｐ明朝','MS PMincho', Georgia, Times, Baskerville, Palatino, serif;
-    font-size: 65px;
+    font-size: 40px;
 	font-weight: bold;
-	line-height: 66px;
+	line-height: 46px;
     text-align: center;
 	color: #FFF;
     letter-spacing: -1px;
@@ -122,18 +122,18 @@ input[name="image"]:hover { opacity:0.9; filter:alpha(opacity=70); }
     display: block;
 }
 .s {
-    font-size: 55px;
+    font-size: 38px;
 	font-weight: bold;
-	line-height: 56px;
+	line-height: 44px;
 }
 .jikan {
     color: #ffe200;
 }
 .owari {
     font-family:'Hiragino Mincho Pro', 'ヒラギノ明朝 Pro W3','Kozuka Mincho Pro', 'Kozuka Mincho Std', '小塚明朝 Pro R', '小塚明朝 Std R', 'ＭＳ Ｐ明朝','MS PMincho', Georgia, Times, Baskerville, Palatino, serif;
-    font-size: 55px;
+    font-size: 38px;
 	font-weight: bold;
-	line-height: 56px;
+	line-height: 44px;
     text-align: center;
 	color: #FFF;
     letter-spacing: -1px;

@@ -100,9 +100,9 @@ line-height:55px;
 /*___________________ タイマー _____________________*/
 .time {
     font-family:'Hiragino Mincho Pro', 'ヒラギノ明朝 Pro W3','Kozuka Mincho Pro', 'Kozuka Mincho Std', '小塚明朝 Pro R', '小塚明朝 Std R', 'ＭＳ Ｐ明朝','MS PMincho', Georgia, Times, Baskerville, Palatino, serif;
-    font-size: 44px;
+    font-size: 32px;
 	font-weight: bold;
-	line-height: 1em;
+	line-height: 1.2em;
     text-align: center;
 	color: #FFF;
     letter-spacing: -1px;
@@ -111,18 +111,18 @@ line-height:55px;
     display: block;
 }
 .s {
-    font-size: 57px;
+    font-size: 32px;
 	font-weight: bold;
-	line-height: 58px;
+	line-height: 40px;
 }
 .jikan {
     color: #ffe200;
 }
 .owari {
     font-family:'Hiragino Mincho Pro', 'ヒラギノ明朝 Pro W3','Kozuka Mincho Pro', 'Kozuka Mincho Std', '小塚明朝 Pro R', '小塚明朝 Std R', 'ＭＳ Ｐ明朝','MS PMincho', Georgia, Times, Baskerville, Palatino, serif;
-    font-size: 65px;
+    font-size: 44px;
 	font-weight: bold;
-	line-height: 66px;
+	line-height: 50px;
     text-align: center;
 	color: #FFF;
     letter-spacing: -1px;
