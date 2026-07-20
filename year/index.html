@@ -35,40 +35,12 @@
 
 <!-- body初期非表示でFOUC防止 -->
 <style>body{display:none;}
-/* ---- ヘッダー画像 ---- */
+/* ---- ヘッダーのデザイン画像 ---- */
 .thanks-img{width:100%;max-width:1600px;display:block;margin:0 auto;}
-.onetime-img{width:88%;max-width:900px;display:block;margin:26px auto 30px;}
-/* ---- FV（画像＋タイマー重畳） ---- */
-#top{
-  position:relative !important;
-  width:100% !important;
-  max-width:1600px;
-  height:auto !important;
-  min-height:0 !important;
-  padding:0 !important;
-  margin:0 auto 50px !important;
-  background:none !important;
-  overflow:hidden;
-  display:block;
-}
-.fv-pc-img{width:100%;display:block;}
-.fv-sp-img{display:none;}
-#top #timer{
-  position:absolute;
-  left:0; right:0; bottom:0;
-  height:24.5%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-#top #timer .time,#top #timer .owari{margin:0 auto;}
+.onetime-img{width:100%;max-width:900px;display:block;margin:24px auto 30px;}
 @media screen and (max-width:640px){
   .thanks-img{width:900px;max-width:900px;}
-  .onetime-img{width:840px;max-width:840px;margin:30px auto 34px;}
-  #top{width:900px !important;max-width:900px;margin:0 auto 50px !important;}
-  .fv-pc-img{display:none;}
-  .fv-sp-img{display:block;width:100%;}
-  #top #timer{height:22.0%;}
+  .onetime-img{width:860px;max-width:860px;margin:30px auto 36px;}
 }
 </style>
     
@@ -84,8 +56,6 @@
 <img src="images/onetime_note.jpg" alt="ご注意：このページは1回しか表示されません" class="onetime-img"/>
 
 <div id="top">
-    <img src="images/top.jpg" alt="FX HIDE IDを「超お得」に使える年間コースに参加しませんか？" class="fv-pc-img"/>
-    <img src="images/top_sp.jpg" alt="FX HIDE IDを「超お得」に使える年間コースに参加しませんか？" class="fv-sp-img"/>
     <div id="timer"></div>
 </div><!-- end top -->
     
