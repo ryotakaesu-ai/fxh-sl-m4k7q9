@@ -1,0 +1,220 @@
+body{
+	width: 900px;
+	font-family: notosans,"メイリオ", Meiryo, "A-OTF 新ゴ Pro",A-OTF Shin Go Pro,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:35px; 
+line-height:55px;
+	color: #111;
+}
+
+a:hover{
+opacity:0.9;
+filter:alpha(opacity=70);
+-ms-filter: "alpha( opacity=70 )";
+}
+a:hover img{
+/*opacity:0.9;
+filter:alpha(opacity=70);
+-ms-filter: "alpha( opacity=70 )";*/
+}
+input[name="image"]:hover { opacity:0.9; filter:alpha(opacity=70); }
+
+
+/*___________________ 文字 _____________________*/
+.aka{
+	font-weight: bold;
+	color: #B20000;
+}
+.aka2{
+    color: #B20000;
+}
+.kiiro{
+    background: linear-gradient(transparent 60%, #faf78e 60%);
+	font-weight: bold;
+}
+.m{
+    font-size: 38px;
+    font-weight: bold;
+}
+#kono{
+    font-size:20px; 
+    line-height:21px;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 0 5px #000, 10px #000;
+    margin: 0px auto 10px;
+   display: block; 
+}
+/*.naka_pc{
+}*/
+.sp{
+	display: none;
+}
+/*___________________ コンテンツ _____________________*/
+#wrap{
+    /*background-image: url("../images/bg.jpg");
+    background-repeat: repeat-y;
+	background-position: center 0px;*/
+	width: 900px;
+    font-size:35px; 
+line-height:55px;
+	margin: 0px auto 0px;
+	overflow: hidden;
+	display: block;
+}
+#top{
+    background-image: url("../images/top_sp.jpg");
+    background-repeat: no-repeat;
+	background-position: center 0px;
+    background-size: 1600px;
+	width: 900px;
+    height: 134px;
+    padding-top: 510px;
+	margin: 0px auto 50px;
+	overflow: hidden;
+	display: block;
+}
+
+/*.ul1{
+	width: 745px;
+    font-weight: bold;
+	padding-left: 35px;
+	margin: 0px auto 40px;
+	display: block;
+}
+.ul1 li{
+	list-style-type: disc;
+	list-style-position : outside;
+	margin: 0px auto 10px;
+}*/
+#toku_bg{
+  background-image: url("../images/toku_bg.jpg");
+    background-repeat: no-repeat;
+	background-position: center 0px;
+    background-size: 1600px;
+    width: 100%;
+    padding: 30px 0px 40px;
+	margin: 0px auto 0px;
+	overflow: hidden;
+	display: block;
+}
+/*___________________ タイマー _____________________*/
+.time {
+    font-family:'Hiragino Mincho Pro', 'ヒラギノ明朝 Pro W3','Kozuka Mincho Pro', 'Kozuka Mincho Std', '小塚明朝 Pro R', '小塚明朝 Std R', 'ＭＳ Ｐ明朝','MS PMincho', Georgia, Times, Baskerville, Palatino, serif;
+    font-size: 44px;
+	font-weight: bold;
+	line-height: 1em;
+    text-align: center;
+	color: #FFF;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px 5px #520102;
+    margin:0 auto 0px;
+    display: block;
+}
+.s {
+    font-size: 57px;
+	font-weight: bold;
+	line-height: 58px;
+}
+.jikan {
+    color: #ffe200;
+}
+.owari {
+    font-family:'Hiragino Mincho Pro', 'ヒラギノ明朝 Pro W3','Kozuka Mincho Pro', 'Kozuka Mincho Std', '小塚明朝 Pro R', '小塚明朝 Std R', 'ＭＳ Ｐ明朝','MS PMincho', Georgia, Times, Baskerville, Palatino, serif;
+    font-size: 65px;
+	font-weight: bold;
+	line-height: 66px;
+    text-align: center;
+	color: #FFF;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px 5px #520102;
+    margin:0 auto 0px;
+    display: block;
+}
+/*___________________ フォーム _____________________*/
+
+/*.kome{
+    background-color: #F0F0E1;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","A-OTF 新ゴ Pro",A-OTF Shin Go Pro,"メイリオ", Meiryo,  Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	width: 680px;
+	height: 45px;
+	font-size: 18px;
+	line-height:  28px;
+	color: #333;
+	padding: 15px 30px;
+	margin: 0 auto 30px;
+	overflow-y: scroll;
+-webkit-overflow-scrolling: touch;
+transform: translateZ(0);
+	display: block;
+}*/
+/*--------- フッター -----------*/
+
+#foot{
+	width: 700px;
+	font-size: 15px;
+	line-height: 27px;
+	color: #1F1F1F;
+	text-align: center;
+	padding-top: 12px;
+	margin: 0px auto 30px;
+	overflow: hidden;
+	display: block;
+}
+#foot ul{
+	text-align: center;
+	list-style-type: none;
+	margin: 0 auto 0px;
+	display: block;
+}
+#foot ul li{
+	display: inline;
+}
+#foot ul li a{
+	color: #1F1F1F;
+	text-decoration: none;
+}
+#foot small{
+	font-size: 15px;
+}
+
+
+/*___________________ トップ _____________________*/
+
+/*#page-top {
+	background-color: #333333;
+	width: 80px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	opacity:0.8;
+	color: #fff;
+	padding: 3px 3px;
+	border-radius: 5px;
+}
+#page-top a {
+	text-decoration: none;
+	color: #fff;
+	width: 84px;
+	text-align: center;
+	display: block;
+	border-radius: 10px;
+	opacity:0.8;
+	font-size:12px;
+}
+#page-top a:hover {
+	text-decoration: none;
+	opacity:0.5;
+}*/
+
+.btn_end {
+	position: fixed;
+    bottom: 10px;
+    width: 100%;
+	
+	}/**/
+/*.btn_end {
+	position: fixed;
+    bottom: 10px;
+	right: 10px;
+   width: 30%;
+	}*/

@@ -1,535 +1,412 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
+	
 <meta charset="utf-8">
 <meta name="viewport" content="target-densitydpi=device-dpi, width=640px" />
-<link rel="stylesheet" href="../css/reset.css" type="text/css">
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 641px)" href="../css/style.css">
-<link rel="stylesheet" type="text/css" media="screen and (max-width: 640px)" href="../css/style2.css">
-<link rel="stylesheet" href="../css/cmn.css" type="text/css">
-<link rel="stylesheet" href="../css/btn.css" type="text/css">
-<link rel="stylesheet" href="../css/fx.css" type="text/css">
-<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon.png">
-<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="preload" as="style" href="css/reset.css" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/reset.css"></noscript>
+    
+<link rel="preload" as="style" href="css/style.css" media="screen and (min-width:641px)" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/style.css" media="screen and (min-width:641px)"></noscript>
+    
+<link rel="preload" as="style" href="css/style2.css" media="screen and (max-width:640px)" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/style2.css" media="screen and (max-width:640px)"></noscript>
+    
+<link rel="preload" as="style" href="css/cmn.css" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/cmn.css"></noscript>
+    
+<meta name="description" content="FX HIDE IDを「超お得」に使える年間コース">
+<meta name="keywords" content="FX HIDE ID,割引,FX,資産運用">
 <meta name="robots" content="noindex, nofollow">
 <title>FX HIDE IDを「超お得」に使える年間コース</title>
-<style>
-/* ---------- 年間レター専用スタイル ---------- */
-.yr-hero{
-  background:linear-gradient(135deg,#0A1730 0%,#16294E 55%,#0A1730 100%);
-  border-bottom:4px solid #C9A961;
-  text-align:center;
-  padding:64px 20px 58px;
-}
-.yr-hero .l1{
-  color:#C7D3E6;
-  font-size:26px;
-  font-weight:bold;
-  letter-spacing:.14em;
-  display:block;
-  margin-bottom:18px;
-}
-.yr-hero .l2{
-  font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
-  color:#FFF;
-  font-size:52px;
-  font-weight:bold;
-  line-height:1.5;
-  display:block;
-}
-.yr-hero .l2 .gd{
-  background:linear-gradient(180deg,#F5E5B8 8%,#D9B96E 55%,#B08F45 95%);
-  -webkit-background-clip:text;
-  background-clip:text;
-  -webkit-text-fill-color:transparent;
-  font-size:60px;
-}
-.yr-price{
-  width:780px;
-  margin:0 auto 46px;
-  background:#FFF;
-  border:2px solid #C9A961;
-  border-radius:14px;
-  box-shadow:0 14px 40px rgba(90,74,40,.18);
-  text-align:center;
-  padding:44px 30px 40px;
-}
-.yr-price .was{
-  color:#666;
-  font-size:26px;
-  font-weight:bold;
-  text-decoration:line-through;
-  display:block;
-  margin-bottom:8px;
-}
-.yr-price .off{
-  display:inline-block;
-  background:#B03030;
-  color:#FFF;
-  font-size:26px;
-  font-weight:bold;
-  border-radius:999px;
-  padding:8px 30px;
-  margin-bottom:16px;
-}
-.yr-price .now{
-  font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
-  color:#12224A;
-  font-size:40px;
-  font-weight:bold;
-  display:block;
-  line-height:1.4;
-}
-.yr-price .now b{
-  background:linear-gradient(180deg,#C79A3B 8%,#A8791F 55%,#8A6215 95%);
-  -webkit-background-clip:text;
-  background-clip:text;
-  -webkit-text-fill-color:transparent;
-  font-size:66px;
-}
-.yr-price .note{color:#888;font-size:18px;margin-top:12px;display:block;}
-.toku-head{
-  background:linear-gradient(135deg,#0A1730 0%,#16294E 55%,#0A1730 100%);
-  border-top:4px solid #C9A961;
-  border-bottom:4px solid #C9A961;
-  color:#FFF;
-  text-align:center;
-  font-weight:bold;
-  font-size:44px;
-  line-height:1.55;
-  padding:44px 20px;
-  margin:0 0 50px;
-}
-.toku-head .gd{color:#EDD695;}
-.toku-head small{display:block;color:#C7D3E6;font-size:.55em;margin-top:10px;letter-spacing:.1em;}
-.yr-toku{
-  width:800px;
-  margin:0 auto 56px;
-  background:#FFF;
-  border:1px solid #E2D8BF;
-  border-top:6px solid #C9A961;
-  border-radius:12px;
-  box-shadow:0 12px 36px rgba(90,74,40,.14);
-  overflow:hidden;
-}
-.yr-toku .tk-head{
-  background:linear-gradient(135deg,#FBF7EE,#F3EBD8);
-  padding:30px 34px 26px;
-  border-bottom:1px solid #E2D8BF;
-}
-.yr-toku .tk-no{
-  display:inline-block;
-  background:linear-gradient(180deg,#D9B96E,#A8791F);
-  color:#FFF;
-  font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
-  font-weight:bold;
-  font-size:24px;
-  letter-spacing:.12em;
-  border-radius:6px;
-  padding:6px 22px;
-  margin-bottom:14px;
-}
-.yr-toku .tk-worth{
-  float:right;
-  color:#B03030;
-  font-size:26px;
-  font-weight:bold;
-}
-.yr-toku .tk-title{
-  font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
-  color:#12224A;
-  font-size:36px;
-  font-weight:bold;
-  line-height:1.5;
-  display:block;
-  clear:none;
-}
-.yr-toku .tk-sub{
-  color:#8A6215;
-  font-size:24px;
-  font-weight:bold;
-  display:block;
-  margin-top:6px;
-}
-.yr-toku .tk-body{padding:34px 34px 6px;}
-.yr-guarantee{
-  width:800px;
-  margin:0 auto 56px;
-  background:linear-gradient(135deg,#0A1730 0%,#16294E 55%,#0A1730 100%);
-  border:2px solid #C9A961;
-  border-radius:14px;
-  text-align:center;
-  padding:50px 36px 44px;
-  color:#FFF;
-}
-.yr-guarantee .g-title{
-  font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
-  font-size:48px;
-  line-height:1.6;
-  font-weight:bold;
-  color:#EDD695;
-  display:block;
-  margin-bottom:24px;
-}
-.yr-guarantee p{color:#E9EFF9;font-size:24px;line-height:1.9;margin:0;}
-@media screen and (max-width: 640px){
-  .yr-hero .l1{font-size:24px;}
-  .yr-hero .l2{font-size:46px;}
-  .yr-hero .l2 .gd{font-size:54px;}
-  .yr-price{width:88%;box-sizing:border-box;}
-  .yr-price .now{font-size:34px;}
-  .yr-price .now b{font-size:58px;}
-  .toku-head{font-size:46px;}
-  .yr-toku{width:92%;box-sizing:border-box;}
-  .yr-toku .tk-title{font-size:38px;}
-  .yr-toku .tk-worth{float:none;display:block;margin-top:6px;}
-  .yr-guarantee{width:88%;box-sizing:border-box;}
-  .yr-guarantee p{font-size:30px;}
-}
-</style>
+
+    
+
+<!-- ==== Deferred Scripts ==== -->
+<script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@3.5.0/dist/defer.min.js"></script>
+<script>
+  // CSS適用後にbodyを表示
+  window.addEventListener('load', function() {
+    document.body.style.display = 'block';
+  });
+</script>
+
+<!-- body初期非表示でFOUC防止 -->
+<style>body{display:none;}</style>
+    
+
 </head>
 <body>
+
+
+<article>
 <div id="wrap">
 
-<!-- ==================== ヒーロー ==================== -->
-<div class="yr-hero">
-  <span class="l1">毎月コースにご参加のあなたへ、特別なご案内</span>
-  <span class="l2">FX HIDE IDを<br />「<span class="gd">超お得</span>」に使える<br /><span class="gd">年間コース</span></span>
-</div>
+<div id="top">
+    <div id="timer"></div>
+</div><!-- end top -->
+    
+<div class="box">
+<p>FX HIDE IDの毎月コースへのご参加、ありがとうございます。<br /><br />
 
-<!-- ==================== 導入 ==================== -->
-<div class="box2" style="padding-top:50px;">
-<p>FX HIDE IDの毎月コースへのご参加、<br />
-ありがとうございます。<br /><br />
+ここで特別なご案内があります。<br /><br />
 
-ここで、特別なご案内があります。<br /><br />
+もしあなたが今、年間コースへとアップグレードすれば、<br class="sp" /><span class="aka">なんと約20万円もお得にFX HIDE IDを使う</span>ことができます。<br /><br />
 
-もしあなたが今、<br />
-年間コースへとアップグレードすれば、<br /><br />
+通常12ヶ月分　59万7600円（税抜）のところ、<br class="sp" />大幅に割引をして、<br /><br />
 
-<span class="aka m">約20万円もお得に<br class="sp" />FX HIDE IDを使う</span><br /><br />
+<span class="m">39万8000円（税抜）</span><br /><br />
 
-ことができます。</p>
-</div>
+で、1年間FX HIDE IDを使い続けることができ、<br class="sp" />そのあともずっとその特別な割引価格で<br class="sp" />FX HIDE IDを使用する権利が得られます。<br /><br />
 
-<div class="yr-price">
-  <span class="was">通常12ヶ月分　59万7,600円（税抜）のところ</span>
-  <span class="off">約4ヶ月分（20万円）OFF</span>
-  <span class="now"><b>39万8,000</b>円<small style="font-size:24px;">（税抜）</small></span>
-  <span class="note">で、1年間FX HIDE IDを使い続けることができ、<br />そのあともずっとこの特別な割引価格で利用する権利が得られます</span>
-</div>
+しかも、、、！<br /><br />
 
-<div class="box2">
-<p>しかも、、、！<br /><br />
-
-HIDEさんからの特別な計らいがあり、<br /><br />
-
-<span class="kiiro m">総額25万円相当の<br class="sp" />スペシャル特典もプレゼント！</span><br /><br />
+HIDEさんからの特別な計らいがあり、<br />
+総額25万円相当のスペシャル特典もプレゼント！<br /><br />
 
 以下に詳細を記載しますので、<br />
-もう少しだけお時間をとって、<br />
-このページを最後までご覧ください。<br /><br />
+もう少しだけお時間をとって、このページを最後までご覧ください。<br /><br />
 
-（なお、このページは一度閉じると<br class="sp" />二度と表示されません。<br />
-今すぐ続きをお読みください）</p>
-</div>
-
-<!-- ==================== 価値の再確認 ==================== -->
-<h2 class="h2ttl">FX HIDE IDは<br /><span class="ao-min mincho">「長く使うほど」利益になる</span></h2>
-
+<span class="aka2">（なお、このページは一度閉じると二度と表示されません。今すぐ続きをお読みください）</span>
+</p>
+</div><!-- end box -->
+        
+<h2><img src="images/kotoshi.png" alt="20万円もお得にHIDE IDを使えます。" width="572" height="186" class="gazo30" loading="lazy"/></h2>
+    
 <div class="box2">
-<p>2025年1月から、すべての月がプラスで、<br />
-通算+10,190pipsという記録的な成績を<br />
-生み出し続けているFX HIDE ID。<br /><br />
+<p>2025年1月からすべての月がプラス、通算+10,190pipsという記録的な成績を生み出し続けているインジケーター”FX HIDE ID”。<br />
+あなたにはこの強力な武器を、最もお得にお使いいただきたい。<br /><br />
 
-あなたにはこの強力な武器を、<br />
-最もお得にお使いいただきたい。<br /><br />
+そんな思いがあり、特別な年間コースをご提案しています。<br /><br />
 
-そんな思いから、<br />
-特別な年間コースをご提案しています。<br /><br />
+通常、年間コースが59万7600円（税抜）のところ、約4ヶ月分お得に39万8000円（税抜）という特別価格でFX HIDE IDを1年たっぷり使っていただけます。
+</p>
+</div><!-- end box -->
+    
+<p><img src="images/kakaku.png" alt="39万8000円" width="774" height="74" class="gazo40" loading="lazy"/></p>
+    
+<div class="box">
+<p>これが一番オトクにFX HIDE IDをお使いいただくプランです。<br /><br />
 
-すでにご覧いただいた通り、<br />
-FX HIDE IDのシミュレーションでは、<br /><br />
+あなたはすでにご覧になった通り、FX HIDE IDは「長く使えば使うほど、大きな利益になる」のです。<br /><br />
 
-<span class="aka">100万円スタートの複利運用で、<br />
-1年半後に約1,548万円。</span><br /><br />
+2025年1月から一度もマイナスの月がなく、通算+10,190pips。だからこそ、シミュレーションでは100万円スタートの複利運用で、1年半後に約1,548万円という数字になるのです。<br /><br />
 
-なぜこんな数字になるのか。<br /><br />
+大きく減らす月がないから、雪だるまが途中で崩れずに転がり続けて大きくなっていく。<br /><br />
 
-答えはシンプルで、<br /><br />
+それに対して、1年間のFX HIDE ID利用料が39万8000円ですから「格安」で使えることがお分かりいただけると思います。<br /><br />
 
-<span class="kiiro">一度もマイナスの月がないから</span><br /><br />
-
-です。<br /><br />
-
-大きく減らす月がないから、<br />
-雪だるまが途中で崩れずに、<br />
-転がり続けて大きくなっていく。<br /><br />
-
-つまりFX HIDE IDは、<br /><br />
-
-<span class="aka m">長く使えば使うほど、<br class="sp" />大きな利益になる</span><br /><br />
-
-のです。<br /><br />
-
-1年間の利用料が39万8,000円ですから、<br />
-「格安」で使えることが<br />
-お分かりいただけると思います。<br /><br />
-
-1年使い続ければ、<br />
-間違いなくそれ以上のリターンが<br />
-見込めると、HIDEさん、我々は<br />
-確信しております。<br />
-（※過去実績に基づく試算であり、<br class="sp" />将来の成果を保証するものではありません）</p>
-</div>
-
-<!-- ==================== 特典ヘッダー ==================== -->
-<div class="toku-head">年間コースに参加された方だけの<br /><span class="gd">5大スペシャル特典</span><small>― 総額25万円相当 ―</small></div>
-
+1年使い続ければ、間違いなくそれ以上のリターンが見込めると、HIDEさん、我々は確信しております。<br />
+（※過去実績に基づく試算であり、将来の成果を保証するものではありません）
+</p>
+</div><!-- end box -->
+    
+<div id="catch">
+</div><!-- end catch -->
+    
 <div class="box2">
-<p>年間コースにお申し込みいただいた方にだけ、<br />
-特別なプレゼントをご用意しています！<br /><br />
+<p>年間コースにお申し込みいただいた方にだけ、特別なプレゼントをご用意しています！<br /><br />
 
 「ここまでやるの！？」<br /><br />
 
-と、思うくらいすごい特典ばかりです。<br />
-ぜひ以下から詳細をご確認くださいね。</p>
-</div>
+と、思うくらいすごい特典ばかりです。ぜひ以下から詳細をご確認くださいね。<br /><br />
 
-<!-- ==================== 特典1 ==================== -->
-<div class="yr-toku">
-  <div class="tk-head">
-    <span class="tk-no">特典 1</span><span class="tk-worth">5万円相当</span>
-    <span class="tk-title">HIDEさんと1対1で話せる<br />個別コンサルティング</span>
-  </div>
-  <div class="tk-body">
-    <p>これは神レベルのプレゼント。<br /><br />
+あなたも感じているかもしれませんが、<br /><br />
 
-    HIDEさんがマンツーマンで、<br />
-    あなたのFXトレードについて<br />
-    コンサルティングをしてくれます。<br /><br />
+「なぜここまで年間コースの方を優遇するの？」<br /><br />
 
-    ロットの決め方、レバレッジの管理、<br />
-    資金量に合わせた運用設計まで、<br />
-    HIDEさんが直接アドバイス。<br /><br />
+という疑問が湧くかもしれません。<br /><br />
 
-    「この資金量なら、何ロットが適正か？」<br />
-    「サイン通りにやれているか見てほしい」<br /><br />
+でも理由はシンプル。やはり<span class="aka">FX HIDE IDは長く使い続けてこそ、本当の価値を実感いただけるから</span>です。一度もマイナスの月がない安定感は、長く使うほど複利で効いてきます。<br /><br />
 
-    といった具体的な疑問にも、<br />
-    その場で明確な答えを提示します。<br /><br />
+でも1ヶ月、2ヶ月で使うのを辞めてしまったら、FX HIDE IDの凄さは実感できないまま。それって、あまりにももったいないですよね？だから私たちは、こうやって年間コースに参加される方に、大幅割引、スペシャルプレゼントをご用意して、「できるだけ長く使って」いただきたいのです。<br /><br />
 
-    通常、こうした個別コンサルは<br />
-    受け付けていないHIDEさんですが、<br />
-    年間コース参加者のために<br />
-    特別に枠を確保しました。<br /><br />
+では、今回あなたにお渡しできるプレゼントは・・・
+</p>
+</div><!-- end box -->
+    
+    
+<div id="toku_bg0">
+<div id="toku_bg">
 
-    月額コースの個別サポートが1回なのに対し、<br />
-    <span class="kiiro">年間コースは3回まで</span>。<br /><br />
+<div class="toku_wrap">     
+<div class="toku">
+<h3><img src="images/toku01.jpg" alt="HIDEさんと1対1で話せる個別コンサルティング" width="840" height="682" class="gazo30" loading="lazy"/></h3>
+<p>これは神レベルのプレゼント。<br /><br />
 
-    プロの視点からの具体的な改善策が、<br />
-    あなたのFX人生を大きく変えるでしょう。<br /><br />
+HIDEさんがマンツーマンで、<br />
+あなたのFXトレードについてコンサルティングを<br class="sp" />してくれます。<br /><br />
 
-    ※一回30分の枠で購入後2か月以内で3回まで</p>
-  </div>
-</div>
+たとえば、ロットの決め方、<br />
+レバレッジの管理、資金管理の方法まで、<br class="sp" />HIDEさんが直接アドバイス。<br /><br />
 
-<!-- ==================== 特典2 ==================== -->
-<div class="yr-toku">
-  <div class="tk-head">
-    <span class="tk-no">特典 2</span><span class="tk-worth">3万円相当</span>
-    <span class="tk-title">特別講義「株とFX、結局どっちがいいの？」</span>
-    <span class="tk-sub">～リスクと期待リターンの大きな違い～</span>
-  </div>
-  <div class="tk-body">
-    <p>株とFX、両方のHIDE IDを知り尽くした<br />
-    HIDEさんだからこそ語れる特別講義です。<br /><br />
+「この資金量なら、何ロットが適正か?」<br />
+「サイン通りにやれているか見てほしい」<br /><br />
 
-    レバレッジ、取引時間、必要資金、値動きの性質。<br />
-    株とFXでは、リスクと期待リターンの構造が<br />
-    まったく違います。<br /><br />
+といった具体的な疑問にも、<br />
+その場で明確な答えを提示します。<br /><br />
 
-    「自分の資金量と生活スタイルなら、<br />
-    どちらにどれだけ配分すべきか？」<br /><br />
+通常、こうした個別コンサルは<br />
+受け付けていないHIDEさんですが、<br /><br />
 
-    この問いに、25年以上相場で戦ってきた<br />
-    プロの答えを聞ける機会は、<br />
-    他ではまずありません。<br /><br />
+年間コース参加者のために<br />
+特別に枠を確保しました。<br /><br />
 
-    株版HIDE IDをお使いの方にとっては、<br />
-    <span class="kiiro">「二刀流」の設計図</span>になる講義です。</p>
-  </div>
-</div>
+5万円相当と書きましたが、<br />
+正直それ以上に価値があると思います。<br /><br />
 
-<!-- ==================== 特典3 ==================== -->
-<div class="yr-toku">
-  <div class="tk-head">
-    <span class="tk-no">特典 3</span><span class="tk-worth">3万円相当</span>
-    <span class="tk-title">特別講義「FX HIDE IDの<br />メンタルマネジメント」</span>
-    <span class="tk-sub">～心構えで全てが決まる～</span>
-  </div>
-  <div class="tk-body">
-    <p>トレードで失敗する原因の9割は、<br />
-    手法ではなくメンタルです。<br /><br />
+他では絶対に聞けない、<br />
+プロの視点からの具体的な改善策が得られる<br />個別コンサルティングが、<br /><br />
 
-    サインが出ているのに怖くて入れない。<br />
-    含み益が出ると早く利確したくなる。<br />
-    損切りのサインを無視してしまう。<br /><br />
+あなたのFX人生を、<br />
+これから大きく変えるでしょう。<br>※一回30分の枠で購入後2か月以内で3回まで
 
-    こうした「人間の本能」への対処法を、<br />
-    HIDEさんが体系的に講義します。<br /><br />
+</p>
+</div><!-- end toku -->
+<p><img src="images/num1.png" alt="特典１" width="196" height="196" class="num" loading="lazy"/></p>
+</div><!-- end toku_wrap --> 
+    
+<div class="toku_wrap">     
+<div class="toku">
+<h3><img src="images/toku02.jpg" alt="株とFX、結局どっちがいいの？　リスクと期待リターンの違い" width="840" height="739" class="gazo30" loading="lazy"/></h3>
+<p>株とFX、両方のHIDE IDを知り尽くした<br class="sp" />HIDEさんだからこそ語れる特別講義です。<br /><br />
 
-    せっかく勝率91.1%のサインがあっても、<br />
-    その通りに実行できなければ<br />
-    意味がありません。<br /><br />
+レバレッジ、取引時間、必要資金、値動きの性質。<br /><br />
 
-    <span class="kiiro">サインを100%活かすための心構え</span>を、<br />
-    最初に身につけてください。<br />
-    ここで全てが決まります。</p>
-  </div>
-</div>
+株とFXでは、リスクと期待リターンの構造が<br class="sp" />まったく違います。<br /><br />
 
-<!-- ==================== 特典4 ==================== -->
-<div class="yr-toku">
-  <div class="tk-head">
-    <span class="tk-no">特典 4</span><span class="tk-worth">4万円相当</span>
-    <span class="tk-title">特別講義「ドルと円の将来の価格予測」</span>
-    <span class="tk-sub">～円が紙切れになる可能性？～</span>
-  </div>
-  <div class="tk-body">
-    <p>あなたの資産は、<br />
-    「円のまま」で本当に大丈夫でしょうか。<br /><br />
+「自分の資金量と生活スタイルなら、<br />
+どちらにどれだけ配分すべきか?」<br /><br />
 
-    日本の財政、金利差、人口動態。<br />
-    ヨーロッパの銀行で世界のマネーを<br />
-    運用してきたHIDEさんが、<br />
-    ドルと円の長期シナリオを解説します。<br /><br />
+この問いに、25年以上相場で戦ってきた<br />
+プロの答えを聞ける機会は、<br />
+他ではまずありません。<br /><br />
 
-    円安がこのまま進んだら、<br />
-    私たちの生活はどうなるのか。<br />
-    最悪のシナリオはどこまであり得るのか。<br /><br />
+株版HIDE IDをお使いの方にとっては、<br />
+「二刀流」の設計図になる講義です。<br /><br />
 
-    そして、その中で<br />
-    <span class="kiiro">為替を「リスク」ではなく<br />「収入源」に変える</span>という発想。<br /><br />
+3万円相当と書きましたが、<br />
+あなたの資金配分が最適化されることを考えれば、<br />
+それ以上の価値が確実にあるでしょう。
+</p>
+</div><!-- end toku -->
+<p><img src="images/num2.png" alt="特典２" width="196" height="196" class="num" loading="lazy"/></p>
+</div><!-- end toku_wrap -->
+    
+<div class="toku_wrap">     
+<div class="toku">
+<h3><img src="images/toku03.jpg" alt="FX HIDE IDのメンタルマネジメント講義　心構えで全てが決まる" width="840" height="681" class="gazo30" loading="lazy"/></h3>
+<p>トレードで失敗する原因の9割は、<br />
+手法ではなくメンタルです。<br /><br />
 
-    FXに取り組む意味が、<br />
-    この講義で根本から変わるはずです。</p>
-  </div>
-</div>
+サインが出ているのに怖くて入れない。<br />
+含み益が出ると早く利確したくなる。<br />
+損切りのサインを無視してしまう。<br /><br />
 
-<!-- ==================== 特典5 ==================== -->
-<div class="yr-toku">
-  <div class="tk-head">
-    <span class="tk-no">特典 5</span><span class="tk-worth">10万円相当</span>
-    <span class="tk-title">存在する全ての通貨ペアで<br />FX HIDE IDを使える権利</span>
-    <span class="tk-sub">～TradingViewの権限を特別付与～</span>
-  </div>
-  <div class="tk-body">
-    <p>毎月コースでは、Discordに届くサイン<br />
-    （推奨7通貨ペア）をお使いいただけますが、<br /><br />
+こうした「人間の本能」への対処法を、<br />
+HIDEさんが体系的に講義します。<br /><br />
 
-    年間コースの方には<br />
-    <span class="aka">TradingViewでFX HIDE IDを使える権限</span><br />
-    を特別に付与します。<br /><br />
+せっかく勝率91.1%のサインがあっても、<br />
+その通りに実行できなければ<br class="sp" />意味がありません。<br /><br />
 
-    これが何を意味するかというと、<br /><br />
+サインを100%活かすための心構えを、<br />
+最初に身につけてください。<br /><br />
 
-    <span class="kiiro">世界中に存在する全ての通貨ペアで、<br />
-    FX HIDE IDのサインを<br />
-    自分のチャートに表示できる</span><br /><br />
+ここで全てが決まります。
+</p>
+</div><!-- end toku -->
+<p><img src="images/num3.png" alt="特典３" width="196" height="196" class="num" loading="lazy"/></p>
+</div><!-- end toku_wrap -->
+    
+<div class="toku_wrap">     
+<div class="toku">
+<h3><img src="images/toku04.jpg" alt="ドルと円の将来の価格予測　円が紙切れになる可能性？" width="840" height="754" class="gazo30" loading="lazy"/></h3>
+<p>あなたの資産は、<br />
+「円のまま」で本当に大丈夫でしょうか。<br /><br />
 
-    ということです。<br /><br />
+日本の財政、金利差、人口動態。<br /><br />
 
-    推奨7通貨ペア以外にも、<br />
-    マイナー通貨、クロス通貨まで、<br />
-    あなたの好きな通貨ペアで<br />
-    チャンスを探せるようになります。<br /><br />
+ヨーロッパの銀行で世界のマネーを<br class="sp" />運用してきたHIDEさんが、<br />
+ドルと円の長期シナリオを解説します。<br /><br />
 
-    トレードの幅が一気に広がる、<br />
-    年間コースならではの特別な権利です。<br /><br />
+円安がこのまま進んだら、<br />
+私たちの生活はどうなるのか。<br /><br />
 
-    ※TradingViewの設定方法は<br class="sp" />マニュアルと個別コンサルでサポートします</p>
-  </div>
-</div>
+最悪のシナリオはどこまであり得るのか。<br /><br />
 
-<!-- ==================== 全額返金保証 ==================== -->
-<div class="yr-guarantee">
-  <span class="g-title">さらに、<br />全額返金保証もつけます！</span>
-  <p>1年間ちゃんとやって結果が出なければ、<br />参加費を全額返金。<br />あなたが損をすることはありません。</p>
-</div>
+そして、その中で<br />
+為替を「リスク」ではなく<br class="sp" />「収入源」に変えるという発想。<br /><br />
 
-<div class="box2">
-<p>「こんな保証つけて大丈夫なの？」<br /><br />
+FXに取り組む意味が、<br />
+この講義で根本から変わるはずです。
+</p>
+</div><!-- end toku -->
+<p><img src="images/num4.png" alt="特典４" width="196" height="196" class="num" loading="lazy"/></p>
+</div><!-- end toku_wrap -->
+    
+<div class="toku_wrap">     
+<div class="toku">
+<h3><img src="images/toku05.jpg" alt="存在する全ての通貨ペアでFX HIDE IDを使える権利　TradingViewの権限を特別付与" width="840" height="703" class="gazo30" loading="lazy"/></h3>
+<p>毎月コースでは、Discordに届くサイン<br />
+（推奨7通貨ペア）をお使いいただけますが、<br /><br />
 
-と、思う人もいるかもしれませんが、<br />
-まったく問題ありません。<br /><br />
+年間コースの方には<br />
+TradingViewでFX HIDE IDを使える権限を<br class="sp" />特別に付与します。<br /><br />
 
-むしろHIDEさんからは、<br /><br />
+これが何を意味するかというと、<br /><br />
 
-<span class="kiiro m">「FX HIDE IDを使って稼げないなんて<br class="sp" />あり得ないですから」</span><br /><br />
+世界中に存在する全ての通貨ペアで、<br />
+FX HIDE IDのサインを<br class="sp" />自分のチャートに表示できる<br /><br />
 
-と、自信たっぷりの<br />
-お言葉をいただいています。<br /><br />
+ということです。<br /><br />
 
-なのであなたは安心して、<br />
-このFX HIDE IDの年間コースに<br />
-参加することができます。<br /><br />
+推奨7通貨ペア以外にも、<br />
+マイナー通貨、クロス通貨まで、<br />
+あなたの好きな通貨ペアで<br class="sp" />チャンスを探せるようになります。<br /><br />
 
-ある意味、リスクゼロで<br />
-FX HIDE IDを使って稼ぐチャンス。<br /><br />
+トレードの幅が一気に広がる、<br />
+年間コースならではの特別な権利です。<br /><br />
 
-この一度だけの機会を、<br />
-ぜひ手にしてくださいね。<br /><br />
+※TradingViewの設定方法はマニュアルと<br class="sp" />個別コンサルティングでサポートします
+</p>
+</div><!-- end toku -->
+<p><img src="images/num5.png" alt="特典５" width="196" height="196" class="num" loading="lazy"/></p>
+</div><!-- end toku_wrap -->
+    
+</div><!-- end toku_bg -->
+</div><!-- end toku_bg0 -->
+    
+    
+    
+<h2><img src="images/ttl01.jpg" alt="さらに全額返金保証もつけます！" width="760" height="535" class="gazo30" loading="lazy"/></h2>
+<div class="box">
+<p>しかも今回は、年間コースに参加しても成果につながらなかった場合、参加費を全額返金する「全額返金保証」もおつけします。<br /><br />
+
+「こんな保証つけて大丈夫なの？」<br /><br />
+
+と、思う人もいるかもしれませんが、まったく問題ありません。<br />むしろHIDEさんからは、<br /><br />
+
+「FX HIDE IDを使って稼げないなんてあり得ないですから」<br /><br />
+
+と、自信たっぷりのお言葉をいただいています。なのであなたは安心して、このFX HIDE IDの年間コースに参加することができます。ある意味、リスクゼロでFX HIDE IDを使って稼ぐチャンス。この一度だけの機会を、ぜひ手にしてくださいね。<br /><br />
 
 ※返金保証について。<br />
-入会日から1年間、FX HIDE IDのマニュアル通りに<br class="sp" />トレードをしながらも<br />
-まったく利益にならなかった場合は、<br />
-年間コースの参加費を全額返金させていただきます。<br />
-（各月2回以上のトレードは必ずしてください）</p>
-</div>
+入会日から1年間、FX HIDE IDの<span class="aka_">マニュアル通り</span>にトレードをしながらもまったく利益にならなかった場合は、年間コースの参加費を全額返金させていただきます。（各月2回以上のトレードは必ずしてください）
+</p>
+</div><!-- end box -->
+    
 
-<!-- ==================== 申込 ==================== -->
-<h2 class="h2ttl">お申し込みは<br /><span class="ao-min mincho">下のボタンをタップするだけ</span></h2>
+<div id="catch2">
+</div><!-- end catch2 --> 
 
-<img src="../images/package.jpg" width="720" height="500" alt="FX HIDE ID パッケージ" class="gazo40 pkg"/>
+    
+<div class="box">
+<p>こちらのお申し込みで、<br>
+先ほどの決済<br><br>
 
-<div class="course-band"><span class="maru"><span class="n2 mincho">年</span></span>FX攻略コース（FX HIDE ID）年間プラン</div>
+「初月2,980円（翌月以降49,800円）」<br><br>
 
-<div class="yr-price" style="margin-top:34px;">
-  <span class="was">通常12ヶ月分　59万7,600円（税抜）</span>
-  <span class="off">今だけ 20万円OFF</span>
-  <span class="now"><b>39万8,000</b>円<small style="font-size:24px;">（税抜）</small></span>
-  <span class="note">全額返金保証付き／総額25万円相当の5大特典付き</span>
-</div>
+は取り消ししますのでご安心ください。<br><br>
 
-<div class="kome-box">※お申し込みいただくと、先ほどの決済「初月2,980円（翌月以降49,800円）」は取り消しされますのでご安心ください<br />
-※そのあともずっと特別割引価格でご利用いただけます</div>
+お申し込み方法はカンタン。<br /><br />
 
-<div class="box2" style="text-align:center;">
-<a href="#" class="rp-year-btn"><img src="../images/btn.png" alt="お得に年間コースに切り替える！" width="705" height="auto" class="gazo60 my-blink-01"/></a>
-</div>
-
-<div class="box2">
-<p>お申し込み方法はカンタン。<br /><br />
-
-上記のボタンをタップ or クリックで、<br />
+下記のボタンをタップ or クリックで、<br />
 自動で年間コースに切り替わります。<br /><br />
 
-全額返金保証もお付けしていますので、<br />
-安心してご参加ください。</p>
-</div>
+全額返金保証もお付けしていますので<br />
+安心してご参加ください。
+</p>
+</div><!-- end box -->
+    
+    
+<!------------ 申し込みここから ------------>
 
-<!-- ==================== フッター ==================== -->
-<div class="disclaimer">【重要事項】本サービスは、投資判断の参考となる情報の提供および学習用コンテンツ・技術サポートの提供を目的としたものであり、金融商品取引法に定める投資助言・代理業として個別通貨の売買を推奨するものではありません。掲載されている成績・実績は過去のものであり、将来の運用成果を保証するものではありません。FX（外国為替証拠金取引）は、レバレッジ効果により預託した証拠金を上回る損失が発生するおそれがあります。取引はご自身の判断と責任において行ってください。</div>
+<a href="#" class="rp-annual-btn"><img src="images/btn.png" alt="お得に年間コースに切り替える" width="705" height="186" class="gazo40 my-blink-01" loading="lazy"/></a>
 
+<!------------ 申し込みここまで ------------>
+    
+<div class="box2">
+<p>
+	※返金保証について。<br />
+入会日から1年間、FX HIDE IDの<span class="aka_">マニュアル通り</span>にトレードをしながらもまったく利益にならなかった場合は、年間コースの参加費を全額返金させていただきます。（各月2回以上のトレードは必ずしてください） </p>
+</div><!-- end box -->
+    
+    
 <div id="foot">
-<ul>
-<li><a href="#">プライバシーポリシー</a>　|　</li>
-<li><a href="#">特商法に関する表記</a></li>
-</ul>
-<small>Copyright &copy; All rights reserved.</small>
-</div>
+	<ul>
+        <li><a href="https://fujii3fire.com/lan/law/law.html" target="_blank">特定商取引法に基づく表記</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+        <li><a href="https://fujii3fire.com/lan/law/policy.html" target="_blank">プライバシーポリシー</a></li>
+    </ul>
+	<small>Copyright © All rights reserved.</small>
 
+</div><!-- end foot -->
 </div><!-- end wrap -->
+
+
+<!--<p id="page-top"><a href="#">PAGE TOP</a></p>
+<a href="#" target="_blank"><img src="images/btn.png" class="btn_end animate72" loading="lazy" /></a>-->
+</article>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<!--トップへ-->
+<script type="text/javascript">
+$(function() {
+	var topBtn = $('.btn_end');	
+	topBtn.hide();
+	//スクロールが100に達したらボタン表示
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			topBtn.fadeIn();
+		} else {
+			topBtn.fadeOut();
+		}
+	});
+	//スクロールしてトップ
+    //topBtn.click(function () {
+		//$('body,html').animate({
+			//scrollTop: 0
+		//}, 500);
+		//return false;
+    //});
+});
+</script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<script src="js/timer.js"></script>
+    
+    
+<script>
+      Defer.all('script[type="lazyscript"]', 0, true);
+</script>
+    
+
+<form id="rp-annual-form" action="https://credit.j-payment.co.jp/link/creditcard" method="post" style="display:none;">
+  <input type="hidden" name="aid" value=""><!-- TODO: FX年間用の決済aidを設定 -->
+  <input type="hidden" name="iid" value="002">
+</form>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  document.querySelectorAll(".rp-annual-btn").forEach(function(btn) {
+    btn.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      // 年額からの決済フローであることを記録
+      localStorage.setItem("rp_flow", "from_annual");
+
+      // TODO: FX年間用の決済設定後に有効化
+      // var form = document.getElementById("rp-annual-form");
+      // if (form) form.submit();
+      alert("決済リンクは準備中です");
+    });
+  });
+
+});
+</script>
+
+
 </body>
 </html>
