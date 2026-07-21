@@ -77,12 +77,12 @@
 	display: block;
 }
 #catch{
-	background-image: url("../images/present.jpg");
+	background-image: url("../images/present.jpg?v=3");
     background-repeat: no-repeat;
 	background-position: center 0px;
     background-size: 1600px;
 	width: 100%;
-    height: 790px;
+    height: 1130px;
 	margin: 0px auto 0px;
 	display: block;
 }
@@ -161,3 +161,11 @@ a.a-btn{position:relative;display:inline-block;box-sizing:border-box;}
 a.a-btn img,img.a-main{display:block;box-sizing:border-box;}
 img.a-main{width:100%;position:relative;z-index:54;}
 a.shover:hover *{animation-name:none!important;}
+/* ---- 年間コース限定プレゼント画像（2026-07-21 img化） ---- */
+.present-img{
+	width: 100%;
+	max-width: 1600px;
+	height: auto;
+	margin: 0px auto 0px;
+	display: block;
+}
