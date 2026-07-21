@@ -1,0 +1,99 @@
+    :root{
+      --brand-red:#8b0f18;
+      --brand-red2:#b1121d;
+      --paper:#ffffff;
+      --bg:#f6f7f9;
+      --text:#1f2937;
+      --muted:#6b7280;
+    }
+
+#wapper{
+    overflow: hidden;
+}
+
+    body{ background:var(--bg); color:var(--text); }
+    .lp-wrap{ max-width: 860px; margin: 0 auto; }
+
+    /* ヒーロー */
+    .hero{
+      background: radial-gradient(1200px 500px at 50% 0%, #d52b35 0%, var(--brand-red) 45%, #5e0a10 100%);
+      color:#fff;
+      padding: 26px 16px;
+    }
+    .hero .badge{
+      background: rgba(255,255,255,.14);
+      border:1px solid rgba(255,255,255,.2);
+      font-weight: 600;
+    }
+    .hero-card{
+      background: rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius: 18px;
+      padding: 18px;
+      backdrop-filter: blur(4px);
+    }
+
+    /* 白い本文カード */
+    .paper{
+      background: var(--paper);
+      border-radius: 18px;
+      box-shadow: 0 14px 30px rgba(0,0,0,.08);
+      border: 1px solid rgba(0,0,0,.04);
+    }
+    .section-title{
+      font-weight: 800;
+      letter-spacing: .02em;
+    }
+    .lead-muted{ color: var(--muted); }
+
+    /* ステップ（赤背景の中に白いカードが並ぶ） */
+    .steps{
+      background: linear-gradient(180deg, var(--brand-red2) 0%, #7a0d14 100%);
+      padding: 42px 12px;
+    }
+    .step-card{
+      border-radius: 16px;
+      border: 1px solid rgba(0,0,0,.06);
+      box-shadow: 0 12px 24px rgba(0,0,0,.10);
+      overflow: hidden;
+    }
+    .step-no{
+      width: 42px; height: 42px;
+      border-radius: 12px;
+      background: var(--brand-red);
+      color:#fff;
+      display:flex; align-items:center; justify-content:center;
+      font-weight: 800;
+    }
+
+    /* 図・画像枠（ダミー） */
+    .ph{
+      background: #e5e7eb;
+      border-radius: 12px;
+      border: 1px dashed #cbd5e1;
+      min-height: 180px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#64748b;
+      font-weight:600;
+    }
+
+    /* CTAボタン */
+    .cta-btn{
+      background: #16a34a;
+      border-color:#16a34a;
+      font-weight: 800;
+      border-radius: 999px;
+      padding: 14px 18px;
+      box-shadow: 0 10px 22px rgba(22,163,74,.25);
+    }
+    .cta-btn:hover{ background:#14863e; border-color:#14863e; }
+
+    /* フッター余白 */
+    .spacer{ height: 28px; }
+
+    .lead {
+    font-size: 1.45rem !important;
+    font-weight: 300;
+}
