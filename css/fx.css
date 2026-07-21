@@ -768,3 +768,65 @@
     margin:0 auto 30px;
   }
 }
+
+/* ============================================================
+   実績エビデンス（証券口座スクリーンショット 2026-07-21）
+   ============================================================ */
+.evidence{
+  width:860px;
+  margin:0 auto 44px;
+  text-align:center;
+}
+.ev-img{
+  width:100%;
+  max-width:860px;
+  height:auto;
+  border:2px solid #C9A961;
+  border-radius:10px;
+  box-shadow:0 10px 30px rgba(10,20,45,.20);
+  display:block;
+  margin:0 auto 14px;
+}
+.ev-cap{
+  font-size:26px;
+  font-weight:bold;
+  color:#12224A;
+  letter-spacing:.04em;
+  margin:0 auto 34px;
+}
+.ev-cap b{color:#B03030;font-size:32px;}
+.ev-cap small{font-size:20px;color:#666;font-weight:normal;}
+.ev-total{
+  background:linear-gradient(135deg,#0A1730 0%,#16294E 55%,#0A1730 100%);
+  border-top:3px solid #C9A961;
+  border-bottom:3px solid #C9A961;
+  color:#FFF;
+  font-size:30px;
+  font-weight:bold;
+  letter-spacing:.06em;
+  padding:22px 10px;
+  margin:0 auto 16px;
+}
+.ev-total b{
+  font-size:40px;
+  background:linear-gradient(180deg,#F5E5B8 8%,#D9B96E 55%,#B08F45 95%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.ev-note{
+  font-size:18px;
+  color:#777;
+  line-height:1.8;
+  text-align:left;
+  margin:0 auto;
+}
+@media screen and (max-width: 640px){
+  .evidence{width:96%;}
+  .ev-cap{font-size:34px;}
+  .ev-cap b{font-size:42px;}
+  .ev-cap small{font-size:26px;}
+  .ev-total{font-size:38px;}
+  .ev-total b{font-size:50px;}
+  .ev-note{font-size:24px;}
+}
