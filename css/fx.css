@@ -830,3 +830,61 @@
   .ev-total b{font-size:50px;}
   .ev-note{font-size:24px;}
 }
+
+/* ============================================================
+   FXの強み4カード（2026-07-21）
+   ============================================================ */
+.ts-card{
+  width:860px;
+  margin:0 auto 34px;
+  background:#FFF;
+  border:1px solid #E2D8BF;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(10,20,45,.14);
+  overflow:hidden;
+}
+.ts-head{
+  display:flex;
+  align-items:center;
+  gap:24px;
+  background:linear-gradient(135deg,#0A1730 0%,#16294E 55%,#0A1730 100%);
+  border-left:9px solid #C9A961;
+  padding:26px 32px;
+}
+.ts-icon{
+  flex:none;
+  width:78px;height:78px;
+  border-radius:50%;
+  background:rgba(201,169,97,.13);
+  border:2px solid rgba(201,169,97,.55);
+  display:flex;align-items:center;justify-content:center;
+}
+.ts-icon svg{width:44px;height:44px;display:block;}
+.ts-txt{
+  font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
+  color:#FFF;
+  font-size:36px;
+  font-weight:bold;
+  line-height:1.35;
+  letter-spacing:.03em;
+}
+.ts-txt small{
+  display:block;
+  font-family:Georgia,serif;
+  color:#EDD695;
+  font-size:19px;
+  font-weight:bold;
+  letter-spacing:.24em;
+  margin-bottom:6px;
+}
+.ts-body{padding:32px 36px 8px;}
+.ts-body p{margin:0 0 26px;}
+@media screen and (max-width: 640px){
+  .ts-card{width:96%;margin:0 auto 40px;}
+  .ts-head{gap:20px;padding:28px 24px;border-left-width:12px;}
+  .ts-icon{width:96px;height:96px;}
+  .ts-icon svg{width:54px;height:54px;}
+  .ts-txt{font-size:42px;}
+  .ts-txt small{font-size:24px;}
+  .ts-body{padding:34px 26px 8px;}
+}
