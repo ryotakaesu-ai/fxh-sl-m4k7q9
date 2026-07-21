@@ -166,6 +166,6 @@ a.shover:hover *{animation-name:none!important;}
 	width: 100%;
 	max-width: 1600px;
 	height: auto;
-	margin: 0px auto 0px;
+	margin: 20px auto 55px;
 	display: block;
 }

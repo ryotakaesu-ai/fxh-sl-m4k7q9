@@ -218,3 +218,8 @@ transform: translateZ(0);
 	right: 10px;
    width: 30%;
 	}*/
+
+/* ---- プレゼント／クロージング画像の下余白（SP） ---- */
+.present-img{
+    margin: 26px auto 75px !important;
+}
