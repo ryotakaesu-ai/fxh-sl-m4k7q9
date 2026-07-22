@@ -317,6 +317,8 @@
   width:56px;height:56px;line-height:56px;
   margin:0 auto 10px;
   display:block;
+  text-shadow:none;
+  font-family:"Helvetica Neue",Arial,sans-serif;
 }
 .step3 .tt{font-size:25px;font-weight:bold;display:block;line-height:1.5;}
 .step3 .dd{font-size:17px;line-height:1.7;color:#444;display:block;padding:8px 18px 0;}
