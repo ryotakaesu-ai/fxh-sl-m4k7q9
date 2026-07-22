@@ -892,3 +892,58 @@
   .ts-txt small{font-size:24px;}
   .ts-body{padding:34px 26px 8px;}
 }
+
+/* ============================================================
+   HIDE IDご利用者様 特別価格ブロック（member版 2026-07-22）
+   ============================================================ */
+.member-price{
+  width:742px;
+  max-width:92%;
+  margin:0 auto 20px;
+  background:linear-gradient(135deg,#0A1730 0%,#16294E 55%,#0A1730 100%);
+  border:2px solid #C9A961;
+  border-radius:12px;
+  text-align:center;
+  padding:22px 16px 24px;
+  box-shadow:0 10px 28px rgba(10,20,45,.22);
+}
+.member-price .mp-label{
+  display:inline-block;
+  background:#C9A961;
+  color:#0A1730;
+  font-size:22px;
+  font-weight:bold;
+  letter-spacing:.06em;
+  border-radius:999px;
+  padding:6px 26px;
+  margin-bottom:16px;
+}
+.member-price .mp-body{
+  display:block;
+  color:#FFF;
+  font-size:34px;
+  font-weight:bold;
+  line-height:1.3;
+}
+.member-price .mp-was{
+  color:#9FB3D6;
+  text-decoration:line-through;
+  font-size:30px;
+}
+.member-price .mp-arrow{color:#EDD695;margin:0 6px;}
+.member-price .mp-now{
+  font-size:54px;
+  background:linear-gradient(180deg,#F5E5B8 8%,#D9B96E 55%,#B08F45 95%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.member-price .mp-tax{font-size:22px;color:#C7D3E6;font-weight:normal;}
+@media screen and (max-width: 640px){
+  .member-price{width:94%;padding:26px 16px 28px;}
+  .member-price .mp-label{font-size:28px;padding:8px 28px;}
+  .member-price .mp-body{font-size:42px;}
+  .member-price .mp-was{font-size:36px;}
+  .member-price .mp-now{font-size:66px;}
+  .member-price .mp-tax{font-size:28px;}
+}
