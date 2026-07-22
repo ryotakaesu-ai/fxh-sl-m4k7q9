@@ -464,6 +464,8 @@
   .seiseki .goukei{font-size:34px;}
   .chart-ph{width:820px;font-size:30px;}
   .step3 .st{float:none;width:700px;margin:0 auto 26px;}
+  .step3 .st:last-child{margin:0 auto 26px;}
+  .step3 .no{width:82px;height:82px;line-height:82px;font-size:46px;}
   .step3 .tt{font-size:34px;}
   .step3 .dd{font-size:30px;}
   .tokuten-list{width:760px;}
